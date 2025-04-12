@@ -1,0 +1,33 @@
+# Web Framework Dependencies
+streamlit==1.32.0
+fastapi==0.109.0
+uvicorn==0.27.0
+python-multipart==0.0.6
+pydantic==2.6.1
+python-dotenv==1.0.0
+
+# Image Processing
+Pillow==10.2.0
+opencv-python-headless==4.9.0.80  # Headless version for Vercel
+numpy==1.24.3
+
+# ML Model Dependencies
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.0+cpu  # CPU version for Vercel
+torchvision==0.17.0+cpu  # CPU version for Vercel
+transformers==4.37.2
+ultralytics==8.1.2
+supervision==0.18.0
+
+# HTTP Client
+requests==2.31.0
+
+# CORS
+starlette==0.36.3
+python-multipart==0.0.6
+
+# Runtime Dependencies
+typing-extensions==4.9.0
+protobuf==4.25.2
+pyyaml==6.0.1
+tqdm==4.66.2
