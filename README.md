@@ -26,7 +26,7 @@ InstaDetect is a powerful visual intelligence system that performs open-vocabula
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/instadetect.git
+git clone https://github.com/chuck-ankit/instadetect
 cd instadetect
 ```
 
@@ -36,9 +36,20 @@ pip install -r requirements.txt
 ```
 
 3. Run the application:
+
+Frontend:
 ```bash
-streamlit run app/main.py
+cd app
+streamlit run main.py
 ```
+
+Backend:
+```bash
+cd backend
+uvicorn main:app --reload
+```
+
+Note: Run both frontend and backend in separate terminal windows.
 
 ## 🏗️ Project Structure
 
