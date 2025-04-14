@@ -6,6 +6,42 @@ Multi-Model Object Detection and Segmentation using OV-DINO & YOLO-World
 
 InstaDetect is a powerful visual intelligence system that performs open-vocabulary object detection and instance segmentation using state-of-the-art models: OV-DINO and YOLO-World.
 
+## 🔄 Workflow
+
+```mermaid
+graph TD
+    classDef default fill:#fff,stroke:#333,stroke-width:2px;
+    classDef highlight fill:#f9f9f9,stroke:#333,stroke-width:2px;
+
+    A[fa:fa-image Upload Image] --> B{fa:fa-code-branch Model Selection}
+    B -->|OV-DINO| C[fa:fa-brain OV-DINO Model]
+    B -->|YOLO-World| D[fa:fa-brain YOLO-World Model]
+    
+    E[fa:fa-keyboard Text Prompt] --> C
+    E --> D
+    
+    C --> F[fa:fa-box-open Object Detection]
+    C --> G[fa:fa-puzzle-piece Instance Segmentation]
+    D --> F
+    
+    F --> H[fa:fa-chart-bar Results]
+    G --> H
+    
+    H --> I[fa:fa-eye Visualization]
+    H --> J[fa:fa-chart-line Performance Metrics]
+
+    style A fill:#fff,stroke:#333,stroke-width:2px
+    style B fill:#fff,stroke:#333,stroke-width:2px
+    style C fill:#fff,stroke:#333,stroke-width:2px
+    style D fill:#fff,stroke:#333,stroke-width:2px
+    style E fill:#fff,stroke:#333,stroke-width:2px
+    style F fill:#fff,stroke:#333,stroke-width:2px
+    style G fill:#fff,stroke:#333,stroke-width:2px
+    style H fill:#fff,stroke:#333,stroke-width:2px
+    style I fill:#fff,stroke:#333,stroke-width:2px
+    style J fill:#fff,stroke:#333,stroke-width:2px
+```
+
 ## ✨ Features
 
 - 🔄 Switch between OV-DINO and YOLO-World models
